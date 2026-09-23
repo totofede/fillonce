@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - FillOnce</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --slate-900: #0f172a;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-100: #f1f5f9;
+      --slate-50: #f8fafc;
+      --emerald-600: #059669;
+      --emerald-50: #ecfdf5;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--slate-700);
+      background-color: var(--slate-50);
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 48px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--emerald-600);
+      background: var(--emerald-50);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+      border: 1px solid #a7f3d0;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--slate-900);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .effective-date {
+      font-size: 14px;
+      color: var(--slate-600);
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin: 32px 0 12px 0;
+    }
+    p, ul {
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: var(--slate-900);
+    }
+    .callout {
+      background: var(--slate-50);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+      font-size: 15px;
+    }
+    .callout-green {
+      background: var(--emerald-50);
+      border-left-color: var(--emerald-600);
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--slate-600);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="badge">100% LOCAL & PRIVATE</div>
+      <h1>FillOnce Privacy Policy</h1>
+      <div class="effective-date">Effective Date: September 23, 2026 | Version 1.0</div>
+    </header>
+
+    <div class="callout callout-green">
+      <strong>Core Commitment:</strong> FillOnce operates completely on your local machine. We do not collect, transmit, sell, or view your personal profile data, form inputs, or browsing history. Zero user data leaves your computer.
+    </div>
+
+    <h2>1. Information Collection and Storage</h2>
+    <p>
+      FillOnce is designed from the ground up as a <strong>local-first</strong> browser extension. 
+    </p>
+    <ul>
+      <li><strong>Local Storage Only:</strong> All profile information (name, email, phone, links, work experience, education) and custom question answers are stored exclusively in your browser's local sandbox (<code>chrome.storage.local</code> and <code>IndexedDB</code>).</li>
+      <li><strong>No Accounts:</strong> FillOnce does not require you to create an account, log in, or provide any credentials.</li>
+      <li><strong>No Remote Servers:</strong> There are no backend databases or analytics endpoints collecting your profile data.</li>
+    </ul>
+
+    <h2>2. Network and Outbound Requests</h2>
+    <p>
+      FillOnce does not transmit your personal data across the network.
+    </p>
+    <ul>
+      <li><strong>Zero Telemetry:</strong> We do not include tracking pixels, usage analytics, Google Analytics, telemetry libraries, or crash-reporting SDKs.</li>
+      <li><strong>Zero Outbound Data:</strong> Form contents, matched field labels, and profile entries are never sent to external servers.</li>
+      <li><strong>Local-First Operation:</strong> All field recognition heuristics, fuzzy matching algorithms, and repeating block parsers run locally in your browser process.</li>
+    </ul>
+
+    <h2>3. Browser Permissions Explanation</h2>
+    <p>
+      FillOnce requests only the absolute minimum permissions necessary to perform form filling:
+    </p>
+    <ul>
+      <li><code>activeTab</code>: Grants temporary access to inspect and fill the form on the currently active tab only when you explicitly invoke FillOnce (by pressing the shortcut <code>Alt+Shift+F</code> or clicking the extension popup). It does not provide continuous background access to all tabs.</li>
+      <li><code>scripting</code>: Used to execute the form filling script on the active page upon your explicit action.</li>
+      <li><code>storage</code> & <code>unlimitedStorage</code>: Used to save your profiles, field mappings, and local backups locally on your device.</li>
+      <li><code>contextMenus</code>: Provides the optional right-click "Fill with FillOnce" entry for convenient access.</li>
+    </ul>
+
+    <h2>4. Automatic Form Submission Policy</h2>
+    <div class="callout">
+      <strong>Important Guarantee:</strong> FillOnce will <strong>NEVER automatically submit any form</strong>. FillOnce only populates form fields. Reviewing the filled content and clicking the final "Submit" or "Apply" button is always 100% under your manual control.
+    </div>
+
+    <h2>5. Data Retention and Control</h2>
+    <p>
+      Because your data is stored locally:
+    </p>
+    <ul>
+      <li>You can edit, duplicate, export, or permanently delete any profile directly from the Settings page at any time.</li>
+      <li>Uninstalling the extension immediately and permanently removes all stored data from your browser.</li>
+      <li>You can export your profiles as unencrypted JSON backups to store or move them between devices manually.</li>
+    </ul>
+
+    <h2>6. Contact Us</h2>
+    <p>
+      If you have questions about this privacy policy or the FillOnce extension, please open an issue or contact our maintainers through the official repository:
+      <br>
+      <a href="https://github.com/totofede/fillonce" target="_blank" rel="noopener noreferrer">https://github.com/zachyuan/fillonce</a>
+    </p>
+
+    <footer>
+      &copy; 2026 FillOnce. Built with privacy and local-first architecture.
+    </footer>
+  </main>
+</body>
+</html>
